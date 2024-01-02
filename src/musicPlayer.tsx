@@ -18,22 +18,22 @@ const MusicPlayer: React.FC = () => {
                     </div>
                 </div>
                 <div className="player-content">
-                    <div id="player-album-art">
-                        <img alt="song cover art" />
-                    </div>
                     <div className="player-display">
+                        <div id="player-album-art">
+                            <img src="dumb-funk.png" alt="song cover art" />
+                        </div>
                         <div className="player-buttons">
                             <button id="previous" className="previous" aria-label="Previous">
-                            <FaBackward/>
+                                <FaBackward />
                             </button>
                             <button id="pause" className="pause" aria-label="Pause">
-                            <FaPause/>
+                                <FaPause />
                             </button>
                             <button id="play" className="play" aria-label="Play">
-                            <FaPlay/>
+                                <FaPlay />
                             </button>
                             <button id="next" className="next" aria-label="Next">
-                            <FaForward />
+                                <FaForward />
                             </button>
                         </div>
                     </div>
@@ -42,7 +42,15 @@ const MusicPlayer: React.FC = () => {
 
             <div className="playlist">
                 <div className="playlist-bar">
-                    <p> here i am !!!</p>
+                <div className="parallel-lines">
+                        <div />
+                        <div />
+                    </div>
+                    <h1 className="fcc-title">Playlist</h1>
+                    <div className="parallel-lines">
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
                 <ul id="playlist-songs"></ul>
             </div>
